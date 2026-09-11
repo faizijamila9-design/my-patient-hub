@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyPatientHUB Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!==== Sidebar======>
+
+    <aside class="sidebar" id="sidebar">
+
+        <!-- LOGO -->
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+
+            <div class="logo-text">
+                <span class="my">MyPatient</span>hub<span class="hub">HUB</span>
+            </div>
+
+        </div>
+
+
+        <!-- MENU -->
+        <nav class="menu">
+
+            <a href="#" class="active">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Appointments</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-user-doctor"></i>
+                <span>Find Doctor</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-hospital"></i>
+                <span>Find Clinic</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-comments"></i>
+                <span>Chat</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-store"></i>
+                <span>Find Marketplace</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+                <span>Find Pharmacy</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                <span>My Dependents</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>My Account</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <!-- HELP -->
+        <div class="help-box">
+            <div class="help-icon">
+                <i class="fa-solid fa-question"></i>
+            </div>
+
+            <div>
+                <strong>Need Help?</strong>
+                <small>Contact Support</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="header-left">
+
+                <!-- TOGGLE BUTTON -->
+                <button id="menuBtn" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+                    <p class="breadcrumb">
+                        <i class="fa-solid fa-house"></i>
+                        / Dashboard
+                    </p>
+
+                    <h3>Dashboard</h3>
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <!-- SEARCH -->
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Type here...">
+                </div>
+
+                <!-- LOGOUT -->
+                <div class="logout">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Log out</span>
+                </div>
+
+                <i class="fa-solid fa-gear header-icon"></i>
+
+                <i class="fa-solid fa-bell header-icon"></i>
+
+            </div>
+
+        </header>
+
+
+        <! ===== CONTENT =========>
+
+        <section class="content">
+
+            <h1>Welcome To MyPatientHUB!</h1>
+
+
+            <!-- ================= CARDS ================= -->
+
+            <div class="cards">
+
+
+                <!-- CARD 1 -->
+
+                <div class="card">
+
+                    <h3>Promotion by Clinics</h3>
+
+                    <div class="card-content">
+
+                        <div class="donut clinic-chart"></div>
+
+                        <div class="card-list">
+
+                            <div>
+                                <span>healthcare we provide</span>
+                                <b>16%</b>
+                            </div>
+
+                            <div>
+                                <span>clinic expenses</span>
+                                <b>4%</b>
+                            </div>
+
+                            <div>
+                                <span>satisfied patients</span>
+                                <b>30%</b>
+                            </div>
+
+                            <div>
+                                <span>successsful procedures</span>
+                                <b>50%</b>
+                            </div>
+
+                            <div>
+                                <span>Klinik Mediviron</span>
+                                <b>2%</b>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="details">MORE DETAILS</button>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="card">
+
+                    <h3>Promotion by Pharmacies</h3>
+
+                    <div class="card-content">
+
+                        <div class="donut pharmacy-chart"></div>
+
+                        <div class="card-list">
+
+                            <div>
+                                <span>pharmacy</span>
+                                <b>15%</b>
+                            </div>
+
+                            <div>
+                                <span>medicine available</span>
+                                <b>12%</b>
+                            </div>
+
+                            <div>
+                                <span>pharmacy quality</span>
+                                <b>5%</b>
+                            </div>
+
+                            <div>
+                                <span>various medicines</span>
+                                <b>5%</b>
+                            </div>
+
+                            <div>
+                                <span>Healthy medicine</span>
+                                <b>30%</b>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="details">MORE DETAILS</button>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+
+                <div class="card">
+
+                    <h3>Smart Market Usage by app</h3>
+
+                    <div class="card-content">
+
+                        <div class="donut market-chart"></div>
+
+                        <div class="card-list">
+
+                            <div>
+                                <span>Food Panda</span>
+                                <b>25%</b>
+                            </div>
+
+                            <div>
+                                <span>Grab Food</span>
+                                <b>3%</b>
+                            </div>
+
+                            <div>
+                                <span>Other Apps</span>
+                                <b>10%</b>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 4 -->
+
+                <div class="card health-card">
+
+                    <h3>Health Index</h3>
+
+                    <div class="health-number">
+                        70%
+                        <span>+3%</span>
+                    </div>
+
+                    <div class="graph">
+
+                        <div class="grid-line one"></div>
+                        <div class="grid-line two"></div>
+                        <div class="grid-line three"></div>
+
+                        <div class="health-line"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+<footer class="footer">
+
+    <p>
+        made
+        <span class="heart">♥</span>
+        by <strong>jam web</strong> for a better web.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#">MyPatientHUB</a>
+
+        <a href="#">About me</a>
+
+        <a href="#">Blog</a>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
