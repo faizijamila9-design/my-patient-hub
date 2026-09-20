@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find Clinic</title>
+
+    <link rel="stylesheet" href="find-clinic.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>My</span>PatientHUB
+        </div>
+
+        <nav>
+
+            <a href="#" class="menu-item">
+                <span class="icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="icon">👨‍⚕️</span>
+                Find Doctor
+            </a>
+
+            <a href="#" class="menu-item active">
+                <span class="icon">🏥</span>
+                Find Clinic
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="icon">📅</span>
+                Appointments
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="icon">💊</span>
+                Medicines
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="icon">📄</span>
+                Medical Records
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="menu-item">
+                <span class="icon">⚙</span>
+                Settings
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="icon">↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>Find Clinic</h1>
+                <p>Find a clinic near you</p>
+            </div>
+
+            <div class="profile">
+                <div class="profile-circle">
+                    U
+                </div>
+
+                <div>
+                    <strong>User</strong>
+                    <small>Patient</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- SEARCH SECTION -->
+         <section class="search-section">
+
+    <div class="search-box">
+
+        <!-- SEARCH -->
+        <div class="input-group">
+
+            <label>Search Clinic</label>
+
+            <div class="input-wrapper">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="clinicSearch"
+                    placeholder="Search clinic name..."
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- LOCATION DROPDOWN -->
+        <div class="input-group">
+
+            <label>Location</label>
+
+            <div class="custom-select">
+
+                <button
+                    class="select-button"
+                    id="locationButton"
+                >
+                    <span>📍</span>
+                    <span id="locationText">
+                        Select location
+                    </span>
+                    <span class="arrow">▼</span>
+                </button>
+
+
+                <div
+                    class="dropdown-menu"
+                    id="locationDropdown"
+                >
+
+                    <div
+                        class="dropdown-option"
+                        data-value="Kabul"
+                    >
+                        📍 Kabul
+                    </div>
+
+                    <div
+                        class="dropdown-option"
+                        data-value="Herat"
+                    >
+                        📍 Herat
+                    </div>
+
+                    <div
+                        class="dropdown-option"
+                        data-value="Mazar-e-Sharif"
+                    >
+                        📍 Mazar-e-Sharif
+                    </div>
+
+                    <div
+                        class="dropdown-option"
+                        data-value="Kandahar"
+                    >
+                        📍 Kandahar
+                    </div>
+
+                    <div
+                        class="dropdown-option"
+                        data-value="Jalalabad"
+                    >
+                        📍 Jalalabad
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SPECIALTY DROPDOWN -->
+        <div class="input-group">
+
+            <label>Clinic Type</label>
+
+            <div class="custom-select">
+
+                <button
+                    class="select-button"
+                    id="specialtyButton"
+                >
+
+                    <span id="specialtyText">
+                        Select type
+                    </span>
+
+                    <span class="arrow">
+                        ▼
+                    </span>
+
+                </button>
+
+
+                <div
+                    class="dropdown-menu"
+                    id="specialtyDropdown"
+                >
+
+                    <div
+                        class="dropdown-option"
+                        data-value="General"
+                    >
+                        General Clinic
+                    </div>
+
+                    <div
+                        class="dropdown-option"
+                        data-value="Dental"
+                    >
+                        Dental Clinic
+                    </div>
+
+                    <div
+                        class="dropdown-option"
+                        data-value="Eye"
+                    >
+                        Eye Clinic
+                    </div>
+
+                    <div
+                        class="dropdown-option"
+                        data-value="Children"
+                    >
+                        Children Clinic
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SEARCH BUTTON -->
+
+        <button
+            class="search-button"
+            id="searchButton"
+        >
+            Search
+        </button>
+
+    </div>
+
+</section>
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <div class="input-group">
+
+                    <label>Search Clinic</label>
+
+                    <div class="input-wrapper">
+
+                        <span>🔍</span>
+
+                        <input
+                            type="text"
+                            id="clinicSearch"
+                            placeholder="Search clinic name..."
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOCATION -->
+                <div class="input-group">
+
+                    <label>Location</label>
+
+                    <div class="input-wrapper location-wrapper">
+
+                        <span>📍</span>
+
+                        <input
+                            type="text"
+                            id="locationInput"
+                            placeholder="Select location"
+                            readonly
+                        >
+
+                        <button
+                            type="button"
+                            id="locationButton"
+                            class="map-button"
+                        >
+                            Map ▾
+                        </button>
+
+
+                        <!-- DROPDOWN -->
+                        <div
+                            id="locationDropdown"
+                            class="location-dropdown"
+                        >
+
+                            <div class="dropdown-title">
+                                Select Location
+                            </div>
+
+                            <div
+                                class="location-option"
+                                data-location="Kabul"
+                            >
+                                📍 Kabul
+                            </div>
+
+                            <div
+                                class="location-option"
+                                data-location="Herat"
+                            >
+                                📍 Herat
+                            </div>
+
+                            <div
+                                class="location-option"
+                                data-location="Mazar-e-Sharif"
+                            >
+                                📍 Mazar-e-Sharif
+                            </div>
+
+                            <div
+                                class="location-option"
+                                data-location="Kandahar"
+                            >
+                                📍 Kandahar
+                            </div>
+
+                            <div
+                                class="location-option"
+                                data-location="Jalalabad"
+                            >
+                                📍 Jalalabad
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="search-button"
+                    id="searchButton"
+                >
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAP -->
+        <section class="map-section">
+
+            <div class="map-header">
+
+                <div>
+                    <h2>Clinics Near You</h2>
+                    <p id="resultText">
+                        Showing available clinics
+                    </p>
+                </div>
+
+                <button id="currentLocation">
+                    📍 Use Current Location
+                </button>
+
+            </div>
+
+
+            <div class="fake-map">
+
+                <div class="map-grid"></div>
+
+                <div class="map-label label-one">
+                    Kabul
+                </div>
+
+                <div class="map-label label-two">
+                    Clinic Area
+                </div>
+
+                <div class="map-marker marker-one">
+                    🏥
+                </div>
+
+                <div class="map-marker marker-two">
+                    🏥
+                </div>
+
+                <div class="map-marker marker-three">
+                    🏥
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLINICS -->
+        <section class="clinics-section">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>Available Clinics</h2>
+                    <p>Clinics matching your search</p>
+                </div>
+
+                <span id="clinicCount">
+                    4 Clinics
+                </span>
+
+            </div>
+
+
+            <div
+                class="clinic-container"
+                id="clinicContainer"
+            >
+
+                <!-- CLINIC 1 -->
+                <div
+                    class="clinic-card"
+                    data-name="City Medical Clinic"
+                    data-location="Kabul"
+                >
+
+                    <div class="clinic-image">
+                        🏥
+                    </div>
+
+                    <div class="clinic-info">
+
+                        <h3>City Medical Clinic</h3>
+
+                        <p class="clinic-location">
+                            📍 Kabul, Afghanistan
+                        </p>
+
+                        <p class="clinic-time">
+                            🕒 08:00 AM - 08:00 PM
+                        </p>
+
+                        <div class="clinic-bottom">
+
+                            <span class="status">
+                                ● Open
+                            </span>
+
+                            <button class="details-button">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CLINIC 2 -->
+                <div
+                    class="clinic-card"
+                    data-name="Central Health Clinic"
+                    data-location="Kabul"
+                >
+
+                    <div class="clinic-image">
+                        🏥
+                    </div>
+
+                    <div class="clinic-info">
+
+                        <h3>Central Health Clinic</h3>
+
+                        <p class="clinic-location">
+                            📍 Kabul, Afghanistan
+                        </p>
+
+                        <p class="clinic-time">
+                            🕒 09:00 AM - 06:00 PM
+                        </p>
+
+                        <div class="clinic-bottom">
+
+                            <span class="status">
+                                ● Open
+                            </span>
+
+                            <button class="details-button">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CLINIC 3 -->
+                <div
+                    class="clinic-card"
+                    data-name="Shifa Medical Center"
+                    data-location="Herat"
+                >
+
+                    <div class="clinic-image">
+                        🏥
+                    </div>
+
+                    <div class="clinic-info">
+
+                        <h3>Shifa Medical Center</h3>
+
+                        <p class="clinic-location">
+                            📍 Herat, Afghanistan
+                        </p>
+
+                        <p class="clinic-time">
+                            🕒 08:30 AM - 07:00 PM
+                        </p>
+
+                        <div class="clinic-bottom">
+
+                            <span class="status">
+                                ● Open
+                            </span>
+
+                            <button class="details-button">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CLINIC 4 -->
+                <div
+                    class="clinic-card"
+                    data-name="Noor Health Center"
+                    data-location="Mazar-e-Sharif"
+                >
+
+                    <div class="clinic-image">
+                        🏥
+                    </div>
+
+                    <div class="clinic-info">
+
+                        <h3>Noor Health Center</h3>
+
+                        <p class="clinic-location">
+                            📍 Mazar-e-Sharif
+                        </p>
+
+                        <p class="clinic-time">
+                            🕒 09:00 AM - 05:00 PM
+                        </p>
+
+                        <div class="clinic-bottom">
+
+                            <span class="status">
+                                ● Open
+                            </span>
+
+                            <button class="details-button">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="find-clinic.js"></script>
+
+</body>
+</html>
