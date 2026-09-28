@@ -1,3 +1,5 @@
+@scope (.dashboard-page) {
+
 /* ================= GENERAL ================= */
 
 * {
@@ -53,11 +55,7 @@ body {
     height: 42px;
     border-radius: 50%;
 
-    background: linear-gradient(
-        135deg,
-       purple;
-        
-    );
+    background: linear-gradient(135deg, #e90087, #7048e8);
 
     display: flex;
     align-items: center;
@@ -615,6 +613,8 @@ body {
     color: gray;
 
     font-size: 13px;
+}
+
 }
 
 
